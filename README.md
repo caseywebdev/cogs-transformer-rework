@@ -1,8 +1,9 @@
-# cogs-transformer-example
+# cogs-transformer-rework
 
-An example transformer for [Cogs].
+An [Rework] transformer for [Cogs].
 
-[![Build Status]](http://travis-ci.org/caseywebdev/cogs-transformer-example)
+[![Build Status]](http://travis-ci.org/caseywebdev/cogs-transformer-rework)
 
+[Rework]: https://github.com/reworkcss/rework
 [Cogs]: https://github.com/caseywebdev/cogs
-[Build Status]: https://secure.travis-ci.org/caseywebdev/cogs-transformer-example.png
+[Build Status]: https://secure.travis-ci.org/caseywebdev/cogs-transformer-rework.png

@@ -1,0 +1,6 @@
+.buz {
+  content: 'bar';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -1,11 +1,1 @@
-{
-  "transformers": [
-    {
-      "name": ".",
-      "only": "**/*.txt",
-      "options": {
-        "errorText": "error"
-      }
-    }
-  ]
-}
+{"transformers": {"name": ".", "options": {"plugins": "myth"}}}

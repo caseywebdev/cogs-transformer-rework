@@ -2,7 +2,7 @@ var helper = require('cogs-test-helper');
 
 helper.run({
   'test/config.json': {
-    'test/input.txt': helper.getFileBuffer('test/output.txt'),
-    'test/error.txt': Error
+    'test/input.css': helper.getFileBuffer('test/output.css'),
+    'test/error.css': Error
   }
 });

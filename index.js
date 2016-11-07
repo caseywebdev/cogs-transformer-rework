@@ -1,6 +1,11 @@
-module.exports = ({file: {buffer}, options}) => {
-  const source = buffer.toString();
-  if (source.indexOf(options.errorText) > -1) throw new Error('No good!');
+const rework = require('rework');
 
-  return {buffer: new Buffer('bar\n')};
+module.exports = ({file: {buffer, path}, options, options: {plugins}}) => {
+  if (!plugins) plugins = [];
+  if (!Array.isArray(plugins)) plugins = [plugins];
+  const source = plugins.reduce((css, plugin) => {
+    if (typeof plugin === 'string') plugin = {name: plugin};
+    return css.use(require(plugin.name)(plugin.options));
+  }, rework(buffer.toString(), {source: path})).toString(options);
+  return {buffer: new Buffer(source)};
 };
